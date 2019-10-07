@@ -278,6 +278,7 @@ body {
 
 .registration-block__button:hover {
   background-color: #116e77;
+  color: #ffffff;
 }
 
 .registration-line {
@@ -835,6 +836,7 @@ body {
   border-radius: 5px;
   border: 2px solid #576476;
   outline: none;
+  color: #ffffff;
 }
 
 .footer-form__input::placeholder {

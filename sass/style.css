@@ -8,6 +8,12 @@ body {
   width: 1980px;
   height: 4204px;
   font-family: Calibri, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex-grow: 1;
 }
 
 .container {

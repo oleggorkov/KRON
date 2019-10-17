@@ -1,10 +1,11 @@
+$color: hue(#8c2a27)
+
 *
   box-sizing: border-box
   margin: 0
   padding: 0
 
 body
-  width: 1980px
   font-family: Calibri, sans-serif
   display: flex
   flex-direction: column
@@ -27,10 +28,10 @@ body
 
 .header__logo
   display: block
+  margin-right: auto
 
 .menu
   display: flex
-  margin-left: 124px
 
 .menu__item
   display: flex
@@ -52,8 +53,8 @@ body
   color: #116e77
 
 .header__account
+  margin-left: auto
   display: block
-  margin-left: 703px
   text-decoration: none
   width: 233px
   height: 36px
@@ -1184,6 +1185,285 @@ summary::before
   margin-top: 91px
   margin-bottom: 45px
   margin-left: 413px
+
+.kron-main
+  min-height: 512px
+  position: relative
+
+.kron-main__background
+  background: url("../img/hero-back.png") no-repeat
+  width: 854px
+  height: 486px
+  position: absolute
+  left: 303px
+  top: 26px
+
+.kron-main__background--car
+  width: 720px
+  height: 441px
+  background: url("../img/kron-main.png")
+  position: absolute
+  top: 95px
+  left: 448px
+  z-index: 5
+
+.kron-main__text--red
+  color: #79221d
+  font-weight: bold
+
+.kron-main__text
+  color: #344051
+  font-size: 18px
+  font-weight: 300
+  margin-bottom: 30px
+
+.kron-main-registration
+  min-height: 818px
+  background: url("../img/reg-back.png")
+
+.kron-main-registration__block
+  display: flex
+  padding-top: 111px
+  justify-content: space-between
+
+.registration
+  display: flex
+  margin-top: 33px
+
+.registration-main-block__button
+  width: 233px
+  height: 36px
+  box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09)
+  border-radius: 10px
+  background-color: #ffffff
+  color: #344051
+  font-size: 18px
+  font-weight: bold
+  text-align: center
+  text-decoration: none
+  line-height: 36px
+  transition: all 0.5s
+
+.registration-main-block__button:hover
+  background-color: #116e77
+  color: #ffffff
+
+.registration-main
+  display: flex
+  margin-top: 77px
+
+.registration-block
+  width: 375px
+  height: 311px
+  box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09)
+  border-radius: 20px
+  background: url("../img/reg-main-back.png")
+
+.registration-main-block__heading
+  height: 57px
+  display: flex
+  padding-left: 86px
+  align-items: center
+
+.registration-main-block__img
+  width: 13px
+  height: 16px
+  margin-right: 9px
+
+.registration-block__heading--text
+  color: #ffffff
+  font-size: 24px
+  font-weight: bold
+
+.registration-form-block__input
+  width: 315px
+  height: 36px
+  border-radius: 10px
+  border: 1px solid #576476
+  padding-left: 15px
+  padding-right: 15px
+  outline: none
+
+.registration-form-block__input:first-child
+  margin-bottom: 9px
+
+.registration-form-block__input::placeholder
+  color: #576476
+  font-size: 18px
+  font-weight: bold
+
+.registration-form-block
+  margin-top: 38px
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-bottom: 20px
+
+.registration-block-buttons
+  display: flex
+  margin-left: 30px
+
+.registration-block__btn
+  text-decoration: none
+  text-align: center
+  display: block
+  width: 150px
+  height: 36px
+  border-radius: 10px
+  background-color: #116e77
+  color: #ffffff
+  font-size: 18px
+  font-weight: bold
+  line-height: 36px
+  transition: all .5s
+
+.registration-block__btn:hover
+  background-color: #7a231d
+
+.registration-block__btn:first-child
+  margin-right: 15px
+
+.registration-block-text__down
+  margin-top: 33px
+  color: #7a231d
+  font-size: 18px
+  font-weight: bold
+  text-align: center
+  text-decoration: none
+  display: block
+  transition: all .5s
+
+.registration-block-text__down:hover
+  color: #344051
+
+.kron-main-ship
+  min-height: 813px
+
+.kron-main-ship__block
+  display: flex
+  padding-top: 107px
+  justify-content: space-between
+
+.registration-ship
+  margin-top: 71px
+
+.registration-ship__btn
+  text-decoration: none
+  display: block
+  width: 233px
+  height: 36px
+  font-size: 18px
+  font-weight: bold
+  box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09)
+  border-radius: 10px
+  background-color: #116e77
+  color: #ffffff
+  outline: none
+  text-align: center
+  line-height: 36px
+  margin-right: 12px
+  transition: all .5s
+
+.registration-ship__btn:hover
+  color: #116e77
+  background-color: #7a231d
+
+.registration-ship-img
+  background-image: url("../img/kron-main-ship.png")
+  width: 393px
+  height: 278px
+  margin-top: 20px
+
+.kron-food
+  min-height: 818px
+  background: url("../img/reg-back.png")
+
+.kron-food-block
+  display: flex
+  padding-top: 110px
+  justify-content: space-between
+
+.widget-block-img
+  background-image: url("../img/kron-main-food.png")
+  width: 412px
+  height: 288px
+  margin-top: 20px
+
+.kron-food-button
+  width: 233px
+  height: 36px
+  box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09)
+  border-radius: 10px
+  background-color: #ffffff
+  display: block
+  text-align: center
+  text-decoration: none
+  line-height: 36px
+  color: #344051
+  font-size: 18px
+  font-weight: bold
+  margin-top: 82px
+  transition: all .5s
+
+.kron-food-button:hover
+  color: #ffffff
+  background-color: #116e77
+
+.kron-partners
+  min-height: 559px
+
+.kron-partners-block
+  display: flex
+  padding-top: 88px
+  justify-content: space-between
+
+.kron-partners-block__text
+  color: #344051
+  font-size: 18px
+  font-weight: bold
+
+.registration-food-form
+  margin-top: 106px
+  display: flex
+
+.registration-food-form__input
+  width: 233px
+  height: 36px
+  box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09)
+  border-radius: 10px
+  border: 2px solid #576476
+  background-color: transparent
+  color: #344051
+  outline: none
+  padding-left: 23px
+  padding-right: 23px
+  margin-right: 12px
+
+.registration-food-form__input::placeholder
+  color: #344051
+
+.registration-food-form__btn
+  width: 233px
+  height: 36px
+  box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09)
+  border-radius: 10px
+  background-color: #116e77
+  color: #ffffff
+  font-size: 18px
+  font-weight: bold
+  text-align: center
+  text-decoration: none
+  line-height: 36px
+  display: block
+  transition: all 0.5s
+
+.registration-food-form__btn:hover
+  background-color: #344051
+
+.partners
+  display: flex
+  justify-content: space-between
+  margin-top: 88px
 
 
 

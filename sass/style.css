@@ -20,13 +20,10 @@ body {
 }
 
 .header {
-  width: 100%;
   min-height: 170px;
   background-color: #ffffff;
   display: flex;
   align-items: center;
-  padding-left: 68px;
-  padding-right: 68px;
 }
 
 .header__logo {
@@ -62,11 +59,11 @@ body {
 }
 
 .header__account {
-  margin-left: auto;
   display: block;
+  margin-left: auto;
   text-decoration: none;
-  width: 233px;
-  height: 36px;
+  max-width: 233px;
+  min-height: 36px;
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09);
   border-radius: 10px;
   background-color: #922723;
@@ -1598,8 +1595,8 @@ summary::before {
 }
 
 .registration-ship__btn:hover {
-  color: #116e77;
-  background-color: #7a231d;
+  color: #ffffff;
+  background-color: #344051;
 }
 
 .registration-ship-img {

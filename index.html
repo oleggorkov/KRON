@@ -13,8 +13,9 @@
     <!-- header -->
 
     <header class="header">
+        <div class="header-wrap">
         <a href="index.html" class="header__logo">
-            <img src="img/logo-kron.png" alt="logo">
+            <img src="img/logo-kron.png" alt="logo" class="header__img">
         </a>
         <div class="menu">
             <div class="menu__item">
@@ -39,6 +40,7 @@
         <a href="#" class="header__account">
             <img class="account__img" src="img/account-people.png" alt="people">Личный кабинет
         </a>
+        </div>
     </header>
 
     <!-- end header -->
@@ -48,7 +50,6 @@
     <nav class="navbar">
         <div class="navbar-box container">
             <a href="#" class="navbar-box__link">Тарифы</a>
-            <a href="#" class="navbar-box__link">Новости</a>
             <a href="index_partner.html" class="navbar-box__link">Партнерство</a>
             <a href="#" class="navbar-box__link">Карьера</a>
             <a href="#" class="navbar-box__link">Контакты</a>
@@ -61,8 +62,7 @@
     <!-- kron-main -->
 
     <div class="kron-main container">
-        <div class="kron-main__background"></div>
-        <div class="kron-main__background--car"></div>
+        <div class="kron-main-back"></div>
         <div class="kron-text">
             <div class="kron-auto__heading">KRON</div>
             <div class="kron-auto__heading--small">Приложение на любой вкус</div>
@@ -150,8 +150,8 @@
 
     <!-- kron-main-ship -->
 
-    <div class="kron-main-ship">
-        <div class="kron-main-ship__block container">
+    <div class="kron-main-ship container">
+        <div class="kron-main-ship__block">
             <div class="registration-block__info--dark">
                 <div class="registration-block__heading--dark">KRON SHIP</div>
                 <div class="registration-block__heading--small--dark">Совместные грузоперевозки по городу</div>
@@ -163,7 +163,6 @@
                     <a href="#" class="registration-ship__btn">Скоро в KRON</a>
                 </div>
             </div>
-            <div class="registration-ship-img"></div>
         </div>
         <div class="registration-line-dark container"></div>
         <div class="registration-flex-dark container">
@@ -205,7 +204,6 @@
 
     <div class="kron-food">
         <div class="kron-food-block container">
-            <div class="widget-block-img"></div>
             <div class="widget-block__info">
                 <div class="widget-block__heading">KRON FOOD</div>
                 <div class="widget-block__heading--small">Совместные покупки в магазине</div>
@@ -255,8 +253,8 @@
 
     <!-- kron-partners -->
 
-    <div class="kron-partners">
-        <div class="kron-partners-block container">
+    <div class="kron-partners container">
+        <div class="kron-partners-block">
             <div class="map-block__info--dark">
                 <div class="map-block__heading">НАШИ ПАРТНЕРЫ</div>
                 <div class="map-block__heading--small">Вместе делаем сервис лучше</div>
@@ -274,7 +272,6 @@
                     <a href="#"><img src="img/logo-hi-ru.png" alt="nanokassa"></a>
                 </div>
             </div>
-            <img class="kron-partners-img" src="img/kron-main-partners.png" alt="map">
         </div>
     </div>
 </div>

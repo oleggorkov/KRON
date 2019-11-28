@@ -20,19 +20,31 @@ body {
 }
 
 .header {
-  min-height: 170px;
   background-color: #ffffff;
+}
+
+.header-wrap {
+  max-width: 1600px;
   display: flex;
+  min-height: 170px;
   align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .header__logo {
   display: block;
-  margin-right: auto;
+  margin-left: 10px;
+  margin-right: 39px;
+}
+
+.header__img {
+  width: 150px;
 }
 
 .menu {
   display: flex;
+  width: 1183px;
 }
 
 .menu__item {
@@ -59,8 +71,9 @@ body {
 }
 
 .header__account {
+  margin-right: 10px;
   display: block;
-  margin-left: auto;
+  position: relative;
   text-decoration: none;
   width: 233px;
   height: 36px;
@@ -70,7 +83,6 @@ body {
   color: #ffffff;
   font-size: 18px;
   font-weight: bold;
-  position: relative;
   padding-left: 60px;
   line-height: 36px;
   transition: all 0.5s;
@@ -125,18 +137,19 @@ body {
   position: relative;
 }
 
-.kron-auto__background {
-  background: url("../img/hero-back.png") no-repeat;
-  width: 854px;
-  height: 486px;
-  position: absolute;
-  left: 303px;
-  top: 26px;
+.kron-main {
+  min-height: 512px;
+  background: url("../img/hero-back.png") no-repeat right;
+  position: relative;
 }
 
-.kron-text {
-  z-index: 2;
+.kron-main-back {
+  width: 720px;
+  height: 441px;
+  background: url("../img/kron-main.png") no-repeat center;
   position: absolute;
+  top: 19%;
+  left: 38%;
 }
 
 .kron-auto__heading {
@@ -154,7 +167,7 @@ body {
 }
 
 .kron-auto__line {
-  width: 373px;
+  max-width: 373px;
   height: 4px;
   background: url("../img/hero-line.png");
   margin-bottom: 28px;
@@ -180,16 +193,6 @@ body {
   width: 175px;
   height: 51px;
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09);
-}
-
-.kron-auto__background--car {
-  width: 785px;
-  height: 389px;
-  background: url("../img/hero-car.png");
-  position: absolute;
-  top: 181px;
-  left: 398px;
-  z-index: 5;
 }
 
 .kron-registration {
@@ -877,11 +880,6 @@ body {
   top: 26px;
 }
 
-.kron-text {
-  z-index: 2;
-  position: absolute;
-}
-
 .kron-partner__heading {
   color: #344051;
   font-size: 69px;
@@ -1039,11 +1037,6 @@ body {
   position: absolute;
   left: 247px;
   top: 58px;
-}
-
-.kron-text {
-  z-index: 2;
-  position: absolute;
 }
 
 .kron-faq__heading {
@@ -1387,30 +1380,6 @@ summary::before {
   margin-left: 413px;
 }
 
-.kron-main {
-  min-height: 512px;
-  position: relative;
-}
-
-.kron-main__background {
-  background: url("../img/hero-back.png") no-repeat;
-  width: 854px;
-  height: 486px;
-  position: absolute;
-  left: 303px;
-  top: 26px;
-}
-
-.kron-main__background--car {
-  width: 720px;
-  height: 441px;
-  background: url("../img/kron-main.png");
-  position: absolute;
-  top: 95px;
-  left: 448px;
-  z-index: 5;
-}
-
 .kron-main__text--red {
   color: #79221d;
   font-weight: bold;
@@ -1564,6 +1533,7 @@ summary::before {
 
 .kron-main-ship {
   min-height: 813px;
+  background: url("../img/kron-main-ship.png") no-repeat right 27%;
 }
 
 .kron-main-ship__block {
@@ -1612,16 +1582,14 @@ summary::before {
 }
 
 .kron-food-block {
-  display: flex;
   padding-top: 110px;
-  justify-content: space-between;
+  background: url("../img/kron-main-food.png") no-repeat left 82%;
 }
 
-.widget-block-img {
-  background-image: url("../img/kron-main-food.png");
-  width: 412px;
-  height: 288px;
-  margin-top: 20px;
+.widget-block__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .kron-food-button {
@@ -1648,6 +1616,7 @@ summary::before {
 
 .kron-partners {
   min-height: 559px;
+  background: url("../img/kron-main-partners.png") no-repeat right bottom;
 }
 
 .kron-partners-block {

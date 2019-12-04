@@ -147,6 +147,18 @@ body {
   left: 38%;
 }
 
+.kron-auto-back {
+  position: absolute;
+  top: 35%;
+  left: 38%;
+}
+
+.kron-partner-back {
+  position: absolute;
+  top: 30%;
+  left: 41%;
+}
+
 .kron-auto__heading {
   color: #344051;
   font-size: 69px;
@@ -1579,12 +1591,14 @@ summary::before {
 .kron-food-block {
   padding-top: 110px;
   background: url("../img/kron-main-food.png") no-repeat left 82%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .widget-block__info {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .kron-food-button {

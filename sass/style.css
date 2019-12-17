@@ -169,11 +169,13 @@ details summary::-webkit-details-marker {
   display: none;
 }
 
-summary {
-  display: flex !important;
-  align-items: center;
-  cursor: pointer;
-  outline: 0;
+@media (max-width: 620px) {
+  .header-drop-heading {
+    display: flex !important;
+    align-items: center;
+    cursor: pointer;
+    outline: 0;
+  }
 }
 
 .header-drop-list {
@@ -194,7 +196,7 @@ summary {
 
 .header-account {
   position: relative;
-  margin-right: 10px;
+  margin-right: 1%;
   display: flex;
   text-decoration: none;
   width: 95%;
@@ -239,8 +241,8 @@ summary {
 }
 
 .menu__item:nth-child(2) {
-  margin-left: 54px;
-  margin-right: 46px;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .menu__link {
@@ -277,10 +279,10 @@ summary {
 }
 
 .header__account {
-  margin-right: 10px;
+  margin-right: 1%;
   display: flex;
   text-decoration: none;
-  width: 233px;
+  width: 15%;
   height: 36px;
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09);
   border-radius: 10px;
@@ -337,6 +339,11 @@ summary {
   min-height: 55px;
   background: url("../img/nav-back.png");
 }
+@media (max-width: 620px) {
+  .navbar {
+    display: none;
+  }
+}
 
 .navbar-box {
   display: flex;
@@ -354,13 +361,13 @@ summary {
 }
 
 .navbar-box__link:not(:first-child) {
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-left: 2%;
+  padding-right: 2%;
   border-left: 1px solid #566274;
 }
 
 .navbar-box__link:first-child {
-  padding-right: 22px;
+  padding-right: 2%;
 }
 
 .navbar-box__link:hover {
@@ -376,6 +383,13 @@ summary {
   min-height: 512px;
   background: url("../img/hero-back.png") no-repeat right;
   position: relative;
+}
+@media (max-width: 620px) {
+  .kron-main {
+    background-size: auto 50%;
+    background-position-y: top;
+    background: url("../img/kron-main.png") no-repeat bottom right, url("../img/hero-back.png") no-repeat right;
+  }
 }
 
 .kron-main-back {
@@ -406,11 +420,17 @@ summary {
     left: 47%;
   }
 }
+@media (max-width: 620px) {
+  .kron-main-back {
+    display: none;
+  }
+}
 
 .kron-auto-back {
   position: absolute;
   top: 35%;
   left: 38%;
+  width: 67%;
 }
 
 .kron-partner-back {
@@ -440,7 +460,7 @@ summary {
 }
 
 .kron-auto__line {
-  max-width: 373px;
+  max-width: 31%;
   height: 4px;
   background: url("../img/hero-line.png");
   margin-bottom: 28px;
@@ -458,12 +478,12 @@ summary {
 }
 
 .app-apple {
-  margin-right: 26px;
+  margin-right: 1.5%;
 }
 
 .app-apple,
 .app-google {
-  width: 175px;
+  width: 15%;
   height: 51px;
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09);
 }
@@ -499,7 +519,7 @@ summary {
   margin-top: 16px;
   margin-bottom: 17px;
   background: url("../img/reg-line.png");
-  max-width: 697px;
+  max-width: 100%;
   height: 4px;
 }
 
@@ -515,7 +535,7 @@ summary {
 }
 
 .registration-form__input {
-  width: 233px;
+  width: 112%;
   height: 36px;
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09);
   border-radius: 10px;
@@ -525,7 +545,6 @@ summary {
   outline: none;
   padding-left: 23px;
   padding-right: 23px;
-  margin-right: 12px;
 }
 
 .registration-form__input::placeholder {
@@ -533,7 +552,7 @@ summary {
 }
 
 .registration-block__button {
-  width: 233px;
+  width: 36%;
   height: 36px;
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09);
   border-radius: 10px;
@@ -545,6 +564,7 @@ summary {
   text-decoration: none;
   line-height: 36px;
   transition: all 0.5s;
+  margin-left: 6%;
 }
 
 .registration-block__button:hover {
@@ -611,7 +631,7 @@ summary {
   margin-top: 16px;
   margin-bottom: 17px;
   background: url("../img/reg-line-dark.png");
-  max-width: 697px;
+  max-width: 100%;
   height: 4px;
 }
 
@@ -627,7 +647,7 @@ summary {
 }
 
 .registration-form__input--dark {
-  width: 233px;
+  width: 111%;
   height: 36px;
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09);
   border-radius: 10px;
@@ -637,7 +657,6 @@ summary {
   outline: none;
   padding-left: 23px;
   padding-right: 23px;
-  margin-right: 12px;
 }
 
 .registration-form__input--dark::placeholder {
@@ -645,7 +664,7 @@ summary {
 }
 
 .registration-block__button--dark {
-  width: 233px;
+  width: 35%;
   height: 36px;
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09);
   border-radius: 10px;
@@ -657,6 +676,7 @@ summary {
   text-decoration: none;
   line-height: 36px;
   transition: all 0.5s;
+  margin-left: 6%;
 }
 
 .registration-block__button--dark:hover {
@@ -709,7 +729,7 @@ summary {
 
 .widget-block__link {
   display: flex;
-  width: 376px;
+  width: 114%;
   height: 110px;
   box-shadow: 2px 4px 0 rgba(6, 7, 7, 0.26);
   border-radius: 10px;
@@ -768,7 +788,7 @@ summary {
   margin-top: 16px;
   margin-bottom: 17px;
   background: url("../img/reg-line.png");
-  width: 697px;
+  width: 100%;
   height: 4px;
 }
 
@@ -814,11 +834,12 @@ summary {
 .map__block {
   display: flex;
   padding-top: 61px;
+  justify-content: space-between;
 }
 
 .map-img {
   display: flex;
-  margin-left: 97px;
+  width: 32%;
 }
 
 .map-block__heading {
@@ -837,17 +858,18 @@ summary {
   margin-top: 16px;
   margin-bottom: 17px;
   background: url("../img/reg-line-dark.png");
-  max-width: 697px;
+  max-width: 100%;
   height: 4px;
 }
 
 .map-gen {
   display: flex;
   margin-top: 24px;
+  justify-content: space-between;
 }
 
 .map-form__input {
-  width: 458px;
+  width: 100%;
   height: 36px;
   border-radius: 5px;
   border: 2px solid #576476;
@@ -857,14 +879,13 @@ summary {
   padding-left: 14px;
   outline: none;
   padding-right: 14px;
-  margin-right: 14px;
 }
 
 .map-button {
   display: block;
   text-decoration: none;
   text-align: center;
-  width: 225px;
+  width: 32%;
   height: 36px;
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09);
   border-radius: 10px;
@@ -876,13 +897,17 @@ summary {
   transition: all 0.5s;
 }
 
+.map-gen-form {
+  width: 66%;
+}
+
 .map-button:hover {
   background-color: #344051;
 }
 
 .map-form {
   margin-top: 14px;
-  width: 698px;
+  width: 100%;
   height: 182px;
   border-radius: 5px;
   border: 2px solid #576476;
@@ -993,7 +1018,7 @@ summary {
 .footer-app__link {
   display: flex;
   text-decoration: none;
-  width: 157px;
+  width: 32%;
   height: 46px;
   box-shadow: 1px 2px 0 rgba(6, 7, 7, 0.23);
   background-color: #344051;
@@ -1277,9 +1302,9 @@ summary {
   background-color: transparent;
   font-size: 18px;
   font-weight: 400;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 198px;
+  padding-left: 3%;
+  padding-right: 3%;
+  width: 100%;
   height: 36px;
   border-radius: 5px;
   border: 2px solid #576476;
@@ -1298,7 +1323,7 @@ summary {
 
 .footer-button {
   display: block;
-  width: 230px;
+  width: 69%;
   height: 35px;
   box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -1310,7 +1335,7 @@ summary {
   text-align: center;
   line-height: 35px;
   transition: all 0.5s;
-  margin-left: 13px;
+  margin-left: 3%;
 }
 @media (max-width: 620px) {
   .footer-button {
@@ -1360,7 +1385,7 @@ summary {
 }
 
 .kron-partner__line {
-  max-width: 373px;
+  max-width: 31%;
   height: 4px;
   background: url("../img/hero-line.png");
   margin-bottom: 28px;
@@ -1384,7 +1409,7 @@ summary {
 }
 
 .partner-button {
-  width: 233px;
+  width: 20%;
   height: 36px;
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09);
   border-radius: 10px;
@@ -1420,7 +1445,7 @@ summary {
 }
 
 .partner-block__button {
-  width: 233px;
+  width: 34%;
   height: 36px;
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09);
   border-radius: 10px;
@@ -1462,7 +1487,7 @@ summary {
 }
 
 .widget-partner__button {
-  width: 233px;
+  width: 35%;
   height: 36px;
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09);
   border-radius: 10px;
@@ -1519,7 +1544,7 @@ summary {
 }
 
 .kron-faq__line {
-  max-width: 373px;
+  max-width: 31%;
   height: 4px;
   background: url("../img/hero-line.png");
   margin-bottom: 28px;
@@ -1583,7 +1608,7 @@ summary {
 .faq-reg__line {
   background-image: url("../img/faq-line.png");
   margin-bottom: 31px;
-  max-width: 1172px;
+  max-width: 100%;
   height: 4px;
 }
 
@@ -1627,8 +1652,8 @@ summary {
 
 .reg-questions__img {
   position: absolute;
-  left: 1106px;
-  top: 22px;
+  left: 94%;
+  top: 40%;
 }
 
 .reg-questions__input {
@@ -1669,21 +1694,22 @@ summary {
   background-color: #344051;
 }
 
-.faq-reg__questions[open] summary {
+.faq-reg__questions[open] .reg-questions__heading {
   background-color: transparent;
   color: #344051;
   border-radius: 30px;
   border: 3px solid #344051;
 }
 
-summary::before {
+.reg-questions__heading::before {
   content: url("../img/arrow-up.png");
-  left: 1106px;
+  left: 94%;
   position: absolute;
 }
 
 .faq-reg__questions:not(:last-child) {
   margin-bottom: 27px;
+  width: 100%;
 }
 
 .faq-form {
@@ -1713,16 +1739,16 @@ summary::before {
 }
 
 .faq-form__line {
-  max-width: 697px;
+  max-width: 100%;
   height: 4px;
   margin-bottom: 24px;
   background-image: url("../img/faq-line-down.png");
 }
 
 .faq-form__input {
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 337px;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 47%;
   height: 36px;
   border-radius: 5px;
   border: 2px solid #576476;
@@ -1731,7 +1757,7 @@ summary::before {
 }
 
 .faq-form__input:first-child {
-  margin-right: 25px;
+  margin-right: 5.4%;
 }
 
 .faq-form__input::placeholder {
@@ -1741,10 +1767,10 @@ summary::before {
 }
 
 .faq-form__input--line {
-  max-width: 703px;
+  width: 100%;
   height: 38px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 2%;
+  padding-right: 2%;
   border-radius: 5px;
   border: 2px solid #576476;
   margin-bottom: 9px;
@@ -1764,10 +1790,11 @@ summary::before {
 }
 
 .faq-form-about {
-  padding: 15px 12px 15px 12px;
+  padding: 2% 1.5% 2% 1.5%;
   border-radius: 5px;
   border: 2px solid #576476;
   outline: none;
+  width: 100%;
 }
 
 .faq-form__button {
@@ -1777,7 +1804,7 @@ summary::before {
   color: #ffffff;
   font-size: 18px;
   font-weight: bold;
-  width: 225px;
+  width: 34%;
   height: 36px;
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09);
   border-radius: 10px;
@@ -1791,19 +1818,23 @@ summary::before {
   background-color: #344051;
 }
 
+.kron-ship {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .kron-ship__img {
   width: 530px;
   height: 283px;
-  margin-top: 112px;
-  margin-bottom: 45px;
-  margin-left: 322px;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .kron-ship__heading {
   color: #333f50;
   font-size: 36px;
   font-weight: bold;
-  text-align: center;
   margin-bottom: 11px;
 }
 
@@ -1819,7 +1850,7 @@ summary::before {
   display: block;
   text-align: center;
   text-decoration: none;
-  width: 233px;
+  width: 20%;
   height: 36px;
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09);
   border-radius: 10px;
@@ -1828,7 +1859,6 @@ summary::before {
   font-size: 18px;
   font-weight: bold;
   line-height: 36px;
-  margin-left: 470px;
   margin-bottom: 196px;
   transition: all 0.5s;
 }
@@ -1838,11 +1868,10 @@ summary::before {
 }
 
 .kron-ship__img--food {
-  width: 334px;
-  height: 309px;
-  margin-top: 91px;
-  margin-bottom: 45px;
-  margin-left: 413px;
+  width: 28.3%;
+  height: auto;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .kron-main__text--red {
@@ -1867,6 +1896,12 @@ summary::before {
   padding-top: 111px;
   justify-content: space-between;
 }
+@media (max-width: 620px) {
+  .kron-main-registration__block {
+    flex-direction: column;
+    padding-left: 11%;
+  }
+}
 
 .registration {
   display: flex;
@@ -1874,7 +1909,7 @@ summary::before {
 }
 
 .registration-main-block__button {
-  width: 233px;
+  width: 34%;
   height: 36px;
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09);
   border-radius: 10px;
@@ -1916,7 +1951,7 @@ summary::before {
 .registration-main-block__img {
   width: 13px;
   height: 16px;
-  margin-right: 9px;
+  margin-right: 4%;
 }
 
 .registration-block__heading--text {
@@ -1926,12 +1961,12 @@ summary::before {
 }
 
 .registration-form-block__input {
-  width: 315px;
+  width: 84%;
   height: 36px;
   border-radius: 10px;
   border: 1px solid #576476;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 2%;
+  padding-right: 2%;
   outline: none;
 }
 
@@ -1962,7 +1997,7 @@ summary::before {
   text-decoration: none;
   text-align: center;
   display: block;
-  width: 150px;
+  width: 40%;
   height: 36px;
   border-radius: 10px;
   background-color: #116e77;
@@ -1978,7 +2013,7 @@ summary::before {
 }
 
 .registration-block__btn:first-child {
-  margin-right: 15px;
+  margin-right: 4%;
 }
 
 .registration-block-text__down {
@@ -2014,7 +2049,7 @@ summary::before {
 .registration-ship__btn {
   text-decoration: none;
   display: block;
-  width: 233px;
+  width: 32%;
   height: 36px;
   font-size: 18px;
   font-weight: bold;
@@ -2060,7 +2095,7 @@ summary::before {
 }
 
 .kron-food-button {
-  width: 233px;
+  width: 32%;
   height: 36px;
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09);
   border-radius: 10px;
@@ -2104,7 +2139,7 @@ summary::before {
 }
 
 .registration-food-form__input {
-  width: 233px;
+  width: 40%;
   height: 36px;
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09);
   border-radius: 10px;
@@ -2114,7 +2149,7 @@ summary::before {
   outline: none;
   padding-left: 23px;
   padding-right: 23px;
-  margin-right: 12px;
+  margin-right: 2%;
 }
 
 .registration-food-form__input::placeholder {
@@ -2122,7 +2157,7 @@ summary::before {
 }
 
 .registration-food-form__btn {
-  width: 233px;
+  width: 40%;
   height: 36px;
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09);
   border-radius: 10px;

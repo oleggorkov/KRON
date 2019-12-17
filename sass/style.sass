@@ -12,13 +12,22 @@ body
 
 .content
   flex-grow: 1
+  @media (max-width: 620px)
+    position: relative
+    z-index: 1
 
 .container
   max-width: 1183px
   margin: 0 auto
 
+.outer-wrapper
+  padding-left: 1%
+  padding-right: 1%
+
 .header
   background-color: #ffffff
+  @media (max-width: 620px)
+    border-bottom: 1px solid #344051
 
 .header-wrap
   max-width: 1600px
@@ -27,18 +36,139 @@ body
   align-items: center
   margin: 0 auto
   justify-content: space-between
+  @media (max-width: 620px)
+    min-height: 110px
 
 .header__logo
   display: block
-  margin-left: 10px
-  margin-right: 39px
+  margin-left: 1%
+  margin-right: 0.5%
 
 .header__img
-  width: 150px
+  width: 90%
+  @media (max-width: 800px)
+    width: 120px
+  @media (max-width: 720px)
+    width: 100px
+  @media (max-width: 690px)
+    width: 90px
+  @media (max-width: 620px)
+    width: 150px
+    height: 50px
+    margin-left: 20px
+
+.header-button
+  display: none
+  @media (max-width: 620px)
+    display: block
+    margin-right: 4%
+    position: relative
+
+.header-menu
+  display: none
+  @media (max-width: 620px)
+    display: flex
+    position: absolute
+    top: 111px
+    z-index: 5
+    height: 84vh
+
+.header-menu-flex
+  @media (max-width: 620px)
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    background-color: #ffffff
+    padding-top: 3%
+    padding-left: 4%
+    padding-bottom: 2%
+
+.header-menu-block
+  @media (max-width: 620px)
+    background-color: #344051
+
+.header-menu__link
+  @media (max-width: 620px)
+    font-size: 28px
+    color: #194146
+    font-weight: bold
+    margin-left: 3%
+
+.header-menu__link-food
+  @media (max-width: 620px)
+    font-size: 28px
+    color: #194146
+    font-weight: bold
+    margin-left: 2%
+
+.header-menu-item
+  @media (max-width: 620px)
+    display: flex
+    align-items: center
+
+.header-menu-item:nth-of-type(2)
+  @media (max-width: 620px)
+    margin-top: 20px
+    margin-bottom: 20px
+
+.header-menu-item__img
+  @media (max-width: 620px)
+    width: 27px
+
+details summary::-webkit-details-marker
+  display: none
+
+summary
+  display: flex!important
+  align-items: center
+  cursor: pointer
+  outline: 0
+
+.header-drop-list
+  list-style-type: none
+  margin-top: 24px
+
+.drop-list-link
+  color: #174246
+  font-size: 20px
+  font-weight: bold
+  text-decoration: none
+
+.drop-list
+  margin-bottom: 30px
+
+.header-account
+  position: relative
+  margin-right: 10px
+  display: flex
+  text-decoration: none
+  width: 95%
+  height: 9%
+  box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09)
+  border-radius: 10px
+  background-color: #922723
+  color: #ffffff
+  font-size: 24px
+  font-weight: bold
+  transition: all 0.5s
+  justify-content: space-evenly
+  align-items: center
+
+.account-img
+  position: absolute
+  left: 20%
+  width: 5%
 
 .menu
   display: flex
   width: 1183px
+  @media (max-width: 620px)
+    display: none
+
+.header-button__img
+  @media (max-width: 620px)
+    width: 50px
+    height: 50px
 
 .menu__item
   display: flex
@@ -55,6 +185,14 @@ body
   margin-left: 11px
   text-decoration: none
   transition: all 0.5s
+  @media (max-width: 900px)
+    font-size: 18px
+  @media (max-width: 800px)
+    font-size: 16px
+  @media (max-width: 720px)
+    font-size: 14px
+  @media (max-width: 690px)
+    font-size: 12px
 
 .menu__link:hover
   color: #116e77
@@ -74,10 +212,23 @@ body
   transition: all 0.5s
   justify-content: space-evenly
   align-items: center
+  @media (max-width: 1015px)
+    font-size: 14px
+  @media (max-width: 830px)
+    font-size: 12px
+  @media (max-width: 720px)
+    font-size: 10px
+    height: 26px
+  @media (max-width: 690px)
+    height: 20px
+  @media (max-width: 620px)
+    display: none
 
 .account__img
   width: 13px
   height: 16px
+  @media (max-width: 1150px)
+    display: none
 
 .header__account:hover
   color: #116e77
@@ -123,6 +274,20 @@ body
   position: absolute
   top: 19%
   left: 38%
+  @media (max-width: 1150px)
+    width: 630px
+    height: auto
+    top: 29%
+  @media (max-width: 1015px)
+    width: 550px
+    height: auto
+    top: 38%
+    left: 41%
+  @media (max-width: 900px)
+    width: 450px
+    height: auto
+    top: 32%
+    left: 47%
 
 .kron-auto-back
   position: absolute
@@ -201,7 +366,7 @@ body
   margin-top: 16px
   margin-bottom: 17px
   background: url("../img/reg-line.png")
-  width: 697px
+  max-width: 697px
   height: 4px
 
 .registration-block__text
@@ -296,7 +461,7 @@ body
   margin-top: 16px
   margin-bottom: 17px
   background: url("../img/reg-line-dark.png")
-  width: 697px
+  max-width: 697px
   height: 4px
 
 .registration-block__text--dark
@@ -486,7 +651,7 @@ body
   margin-top: 16px
   margin-bottom: 17px
   background: url("../img/reg-line-dark.png")
-  width: 697px
+  max-width: 697px
   height: 4px
 
 .map-gen
@@ -534,20 +699,31 @@ body
 .footer
   background-image: url("../img/footer-back.png")
   min-height: 664px
+  @media (max-width: 620px)
+    padding-left: 25px
+    padding-right: 25px
 
 .footer-block
   display: flex
   padding-top: 78px
   justify-content: space-between
+  @media (max-width: 620px)
+    padding-top: 50px
 
 .footer-block__flex
   display: flex
+  @media (max-width: 620px)
+    display: none
 
 .footer-block__heading
   margin-bottom: 12px
   color: #ffffff
   font-size: 24px
   font-weight: bold
+  @media (max-width: 800px)
+    font-size: 20px
+  @media (max-width: 710px)
+    font-size: 16px
 
 .footer-list
   list-style-type: none
@@ -558,6 +734,10 @@ body
   font-size: 18px
   font-weight: bold
   transition: all 0.5s
+  @media (max-width: 800px)
+    font-size: 14px
+  @media (max-width: 710px)
+    font-size: 12px
 
 .footer-list__link:hover
   color: #344051
@@ -571,6 +751,15 @@ body
 
 .footer-app
   display: flex
+  @media (max-width: 1040px)
+    display: flex
+    flex-direction: column
+    align-items: center
+  @media (max-width: 620px)
+    flex-direction: row
+    order: 3
+    margin-top: 30px
+    justify-content: space-between
 
 .footer-app__link
   display: flex
@@ -581,6 +770,11 @@ body
   background-color: #344051
   color: #f8f8f8
   border-radius: 5px
+
+.footer-app__link:nth-child(2)
+  @media (max-width: 1040px)
+    margin-top: 20px
+    margin-bottom: 20px
 
 .footer-app__link:last-child
   width: 165px
@@ -595,18 +789,25 @@ body
   font-size: 24px
   font-weight: bold
   padding-top: 10px
+  @media (max-width: 620px)
+    font-size: 18px
+    padding-top: 12px
 
 .footer-app__google
   color: #f8f8f8
   font-size: 22px
   font-weight: bold
   padding-top: 12px
+  @media (max-width: 620px)
+    font-size: 18px
 
 .footer-app__kron
   color: #f8f8f8
   font-size: 14px
   font-weight: bold
   padding-top: 7px
+  @media (max-width: 620px)
+    font-size: 14px
 
 .footer-app__img
   width: 24px
@@ -625,20 +826,35 @@ body
 
 .footer-app__heading
   font-size: 18px
+  @media (max-width: 620px)
+    font-size: 16px
 
 .footer-block__contacts
   display: flex
   flex-direction: column
   align-items: flex-end
+  @media (max-width: 620px)
+    flex-direction: row
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+
 
 .footer-block__img
   width: 211px
   height: 60px
   margin-bottom: 48px
+  @media (max-width: 620px)
+    margin-bottom: 0
+  @media (max-width: 620px)
+    width: 130px
+    height: auto
 
 .footer-social
   display: flex
   margin-top: 41px
+  @media (max-width: 620px)
+    margin-top: 0
 
 .footer-social__link
   display: block
@@ -660,6 +876,8 @@ body
   border: 1px solid #344051
   margin-top: 22px
   margin-bottom: 27px
+  @media (max-width: 620px)
+    display: none
 
 .footer-copyrights__link
   display: block
@@ -667,16 +885,27 @@ body
   font-size: 18px
   font-weight: bold
   text-decoration: none
+  @media (max-width: 1040px)
+    color: #000000
+  @media (max-width: 620px)
+    color: #ffffff
 
 .footer-copyrights__link:first-child
   border-right: 1px solid #ffffff
   padding-right: 10px
+  @media (max-width: 620px)
+    padding: 0
+    border: 0
 
 .footer-copyrights__link:last-child
   padding-left: 10px
 
 .footer-copyrights__item
   display: flex
+  @media (max-width: 620px)
+    flex-direction: column
+    align-items: center
+    color: #ffffff
 
 .footer-copyrights__link:hover
   color: #344051
@@ -684,20 +913,42 @@ body
 .footer-copyrights
   display: flex
   justify-content: space-between
+  @media (max-width: 620px)
+    margin-top: 70px
+    flex-direction: column
+    align-items: center
 
 .footer-copyrights__text
   color: #ffffff
   font-size: 18px
   font-weight: bold
   text-decoration: none
+  @media (max-width: 1040px)
+    color: #000000
+  @media (max-width: 620px)
+    color: #ffffff
+    margin-top: 30px
 
 .footer__block
   margin-top: 217px
   display: flex
   justify-content: space-between
+  @media (max-width: 1040px)
+    margin-top: 100px
+  @media (max-width: 810px)
+    justify-content: center
+  @media (max-width: 620px)
+    flex-direction: column
+    align-items: center
 
 .footer-pay
   display: flex
+  @media (max-width: 810px)
+    display: none
+  @media (max-width: 620px)
+    display: flex
+    order: 2
+    margin-top: 20px
 
 .footer-pay__img
   margin-left: 27px
@@ -715,6 +966,8 @@ body
   border: 2px solid #576476
   outline: none
   color: #ffffff
+  @media (max-width: 620px)
+    width: 140px
 
 .footer-form__input::placeholder
   color: #ffffff
@@ -734,12 +987,16 @@ body
   line-height: 35px
   transition: all 0.5s
   margin-left: 13px
+  @media (max-width: 620px)
+    width: 300px
 
 .footer-button:hover
   background-color: #116e77
 
 .footer-form
   display: flex
+  @media (max-width: 620px)
+    margin-top: 100px
 
 .kron-partner
   min-height: 512px
@@ -766,7 +1023,7 @@ body
   font-weight: bold
 
 .kron-partner__line
-  width: 373px
+  max-width: 373px
   height: 4px
   background: url("../img/hero-line.png")
   margin-bottom: 28px
@@ -903,7 +1160,7 @@ body
   font-weight: bold
 
 .kron-faq__line
-  width: 373px
+  max-width: 373px
   height: 4px
   background: url("../img/hero-line.png")
   margin-bottom: 28px
@@ -957,7 +1214,7 @@ body
 .faq-reg__line
   background-image: url("../img/faq-line.png")
   margin-bottom: 31px
-  width: 1172px
+  max-width: 1172px
   height: 4px
 
 .faq-reg
@@ -1071,7 +1328,7 @@ summary::before
   margin-bottom: 20px
 
 .faq-form__line
-  width: 697px
+  max-width: 697px
   height: 4px
   margin-bottom: 24px
   background-image: url("../img/faq-line-down.png")
@@ -1095,7 +1352,7 @@ summary::before
   font-weight: 400
 
 .faq-form__input--line
-  width: 703px
+  max-width: 703px
   height: 38px
   padding-left: 15px
   padding-right: 15px
@@ -1242,7 +1499,7 @@ summary::before
 .registration-main-block__heading
   height: 57px
   display: flex
-  padding-left: 86px
+  justify-content: center
   align-items: center
 
 .registration-main-block__img
@@ -1281,7 +1538,7 @@ summary::before
 
 .registration-block-buttons
   display: flex
-  margin-left: 30px
+  justify-content: center
 
 .registration-block__btn
   text-decoration: none

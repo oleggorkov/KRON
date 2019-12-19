@@ -1232,7 +1232,7 @@ details summary::-webkit-details-marker {
 }
 @media (max-width: 620px) {
   .footer-app__google {
-    font-size: 15px;
+    font-size: 14px;
     padding: 0;
   }
 }

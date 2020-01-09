@@ -22,6 +22,8 @@ body.lock
 .container
   max-width: 74%
   margin: 0 auto
+  @media (max-width: 1375px)
+    max-width: 90%
   @media (max-width: 620px)
     max-width: 93%
 
@@ -594,6 +596,8 @@ details summary::-webkit-details-marker
   font-size: 24px
   font-weight: bold
   margin-left: 2%
+  @media (max-width: 1120px)
+    font-size: 20px
   @media (max-width: 620px)
     font-size: 20px
 
@@ -602,6 +606,8 @@ details summary::-webkit-details-marker
   font-size: 18px
   font-weight: bold
   text-align: left
+  @media (max-width: 1120px)
+    font-size: 16px
 
 .widget
   min-height: 720px
@@ -703,14 +709,20 @@ details summary::-webkit-details-marker
   color: #f8f8f8
   font-size: 24px
   font-weight: bold
-  margin-left: 14px
-  @media (max-width: 620px)
+  margin-left: 3%
+  @media (max-width: 1120px)
     font-size: 18px
+  @media (max-width: 620px)
+    font-size: 16px
 
 .feature-block__text
   color: #f8f8f8
   font-size: 18px
   font-weight: bold
+  @media (max-width: 1210px)
+    font-size: 16px
+  @media (max-width: 1120px)
+    font-size: 14px
 
 .map
   min-height: 507px
@@ -797,12 +809,14 @@ details summary::-webkit-details-marker
 .footer-block
   display: flex
   padding-top: 78px
-  justify-content: space-between
   @media (max-width: 620px)
     padding-top: 50px
 
 .footer-block__flex
   display: flex
+  justify-content: space-between
+  flex: 1
+  margin-right: 5%
   @media (max-width: 620px)
     display: none
 
@@ -836,16 +850,13 @@ details summary::-webkit-details-marker
 .footer-list__item:not(:last-child)
   margin-bottom: 15px
 
-.footer-block__item:nth-of-type(2)
-  margin-left: 90px
-  margin-right: 86px
-
 .footer-app
   display: flex
+  justify-content: flex-end
   @media (max-width: 1040px)
     display: flex
     flex-direction: column
-    align-items: center
+    align-items: flex-end
   @media (max-width: 620px)
     width: 100%
     flex-direction: row
@@ -856,35 +867,44 @@ details summary::-webkit-details-marker
 
 .footer-app__link
   display: flex
+  justify-content: space-evenly
+  align-items: center
   text-decoration: none
   width: 32%
-  height: 46px
+  height: auto
   box-shadow: 1px 2px 0 rgba(6, 7, 7, 0.23)
   background-color: #344051
   color: #f8f8f8
   border-radius: 5px
+  @media (max-width: 1040px)
+    width: 43%
+    height: 46px
   @media (max-width: 620px)
-    height: 35px
+    height: 42px
     display: flex
     justify-content: space-around
     align-items: center
     width: 30%
 
 .footer-app__link:nth-child(2)
+  margin-left: 2%
+  margin-right: 2%
   @media (max-width: 1040px)
     margin-top: 20px
     margin-bottom: 20px
+    margin-left: 0
+    margin-right: 0
 
 .footer-app__link:last-child
-  width: 165px
+  width: 32%
   height: 47px
+  @media (max-width: 1040px)
+    width: 43%
   @media (max-width: 620px)
     width: 32%
-    height: 35px
+    height: 42px
 
 .footer-app__link:nth-of-type(2)
-  margin-left: 12px
-  margin-right: 14px
   @media (max-width: 620px)
     margin: 0
 
@@ -892,17 +912,18 @@ details summary::-webkit-details-marker
   color: #f8f8f8
   font-size: 24px
   font-weight: bold
-  padding-top: 10px
+  @media (max-width: 1200px)
+    font-size: 20px
   @media (max-width: 620px)
-    font-size: 15px
+    font-size: 14px
     padding: 0
-
 
 .footer-app__google
   color: #f8f8f8
   font-size: 22px
   font-weight: bold
-  padding-top: 12px
+  @media (max-width: 1200px)
+    font-size: 20px
   @media (max-width: 620px)
     font-size: 14px
     padding: 0
@@ -911,36 +932,33 @@ details summary::-webkit-details-marker
   color: #f8f8f8
   font-size: 14px
   font-weight: bold
-  padding-top: 7px
+  @media (max-width: 1170px)
+    font-size: 13px
   @media (max-width: 620px)
     font-size: 10px
     padding-top: 0
 
 .footer-app__img
   width: 24px
-  height: 30px
-  margin-top: 8px
-  margin-left: 13px
-  margin-right: 8px
+  height: auto
   @media (max-width: 620px)
     margin: 0
-    width: 20px
-    height: 26px
+    width: 22%
+    height: auto
 
 .footer-img
   filter: invert(1)
-  width: 29px
-  height: 34px
-  margin-top: 6px
-  margin-left: 6px
-  margin-right: 8px
+  width: 17%
+  height: auto
   @media (max-width: 620px)
     margin: 0
-    width: 20px
-    height: 26px
+    width: 22%
+    height: auto
 
 .footer-app__heading
   font-size: 18px
+  @media (max-width: 1170px)
+    font-size: 14px
   @media (max-width: 620px)
     font-size: 12px
 
@@ -948,6 +966,7 @@ details summary::-webkit-details-marker
   display: flex
   flex-direction: column
   align-items: flex-end
+  flex: 1
   @media (max-width: 620px)
     flex-direction: row
     flex-wrap: wrap
@@ -1642,7 +1661,7 @@ details summary::-webkit-details-marker
   margin-top: 77px
 
 .registration-block
-  width: 375px
+  width: 34%
   height: 311px
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09)
   border-radius: 20px
@@ -1924,6 +1943,13 @@ details summary::-webkit-details-marker
     max-width: 100%
     display: flex
     flex-direction: column
+
+.partners-link
+  @media (max-width: 1120px)
+    width: 25%
+
+.partners-img
+  width: 100%
 
 
 

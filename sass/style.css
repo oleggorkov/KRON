@@ -1942,16 +1942,6 @@ details summary::-webkit-details-marker {
   font-weight: bold;
   text-decoration: none;
 }
-@media (max-width: 1040px) {
-  .footer-copyrights__link {
-    color: #000000;
-  }
-}
-@media (max-width: 620px) {
-  .footer-copyrights__link {
-    color: #ffffff;
-  }
-}
 
 .footer-copyrights__link:first-child {
   border-right: 1px solid #ffffff;
@@ -2001,14 +1991,8 @@ details summary::-webkit-details-marker {
   font-weight: bold;
   text-decoration: none;
 }
-@media (max-width: 1040px) {
-  .footer-copyrights__text {
-    color: #000000;
-  }
-}
 @media (max-width: 620px) {
   .footer-copyrights__text {
-    color: #ffffff;
     margin-top: 33%;
     text-align: center;
   }

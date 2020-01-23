@@ -56,6 +56,7 @@ input
   margin-right: 0.5%
   @media (max-width: 800px)
     margin-right: 5%
+    margin-left: 5%
 
 .header__img
   width: 90%
@@ -68,13 +69,12 @@ input
   @media (max-width: 620px)
     width: 150px
     height: 50px
-    margin-left: 20px
 
 .header-button
   display: none
-  @media (max-width: 620px)
+  @media (max-width: 800px)
     display: block
-    margin-right: 4%
+    margin-right: 5%
     position: relative
 
 .header-menu
@@ -175,10 +175,13 @@ details summary::-webkit-details-marker
 .menu
   display: flex
   width: 1183px
-  @media (max-width: 620px)
+  @media (max-width: 800px)
     display: none
 
 .header-button__img
+  @media (max-width: 800px)
+    width: 30px
+    height: 30px
   @media (max-width: 620px)
     width: 50px
     height: 50px
@@ -227,16 +230,15 @@ details summary::-webkit-details-marker
   align-items: center
   @media (max-width: 1300px)
     font-size: 14px
+    width: 22%
   @media (max-width: 1055px)
     font-size: 12px
   @media (max-width: 975px)
-    font-size: 10px
     height: 26px
   @media (max-width: 900px)
-    width: 25%
-    font-size: 8px
-    height: 20px
-  @media (max-width: 620px)
+    width: 30%
+    height: 24px
+  @media (max-width: 800px)
     display: none
 
 .account__img
@@ -302,19 +304,14 @@ details summary::-webkit-details-marker
   left: 38%
   width: 61%
   @media (max-width: 1150px)
-    width: 630px
     height: auto
     top: 29%
     left: 35%
   @media (max-width: 1015px)
-    width: 550px
-    height: auto
     top: 38%
     left: 41%
   @media (max-width: 900px)
-    width: 405px
-    height: auto
-    top: 54%
+    top: 45%
     left: 37%
   @media (max-width: 620px)
     display: none
@@ -329,24 +326,51 @@ details summary::-webkit-details-marker
 .kron-auto-back
   position: absolute
   top: 35%
-  left: 38%
+  left: 39%
   width: 67%
+  @media (max-width: 1160px)
+    width: 60%
+    height: auto
+    top: 41%
+    left: 45%
+  @media (max-width: 620px)
+    display: none
 
 .kron-partner-back
+  width: 64%
   position: absolute
   top: 30%
   left: 41%
+  @media (max-width: 620px)
+    display: none
 
 .kron-faq-back
+  width: 65%
   position: absolute
   top: 40%
   left: 38%
+  @media (max-width: 1150px)
+    height: auto
+    top: 34%
+    left: 35%
+  @media (max-width: 1015px)
+    top: 38%
+    left: 41%
+  @media (max-width: 900px)
+    top: 45%
+    left: 37%
+  @media (max-width: 620px)
+    display: none
 
 .kron-auto__heading
   color: #344051
   font-size: 69px
-  padding-top: 89px
+  padding-top: 17%
   font-weight: bold
+  @media (max-width: 1160px)
+    font-size: 55px
+  @media (max-width: 800px)
+    font-size: 50px
   @media (max-width: 620px)
     padding-top: 5%
     font-size: 34px
@@ -370,12 +394,6 @@ details summary::-webkit-details-marker
     max-width: 100%
     margin-bottom: 20px
 
-.kron-auto__text
-  color: #344051
-  font-size: 18px
-  font-weight: bold
-  margin-bottom: 52px
-
 .kron-auto__app
   display: flex
   @media (max-width: 620px)
@@ -397,29 +415,44 @@ details summary::-webkit-details-marker
   box-shadow: 0 0 3px rgba(6, 7, 7, 0.09)
 
 .kron-registration
-  min-height: 818px
   background: url("../img/reg-back.png")
 
 .kron-registration__block
   display: flex
-  padding-top: 111px
+  padding-top: 10%
+  @media (max-width: 620px)
+    flex-direction: column
 
 .registration-block__phone
   display: flex
-  margin-right: 99px
+  margin-right: 7%
+  @media (max-width: 1150px)
+    margin-right: 3%
+  @media (max-width: 900px)
+    align-items: center
+
+.phone-img
+  width: 48%
+  @media (max-width: 900px)
+    height: 80%
 
 .registration-block__info
   max-width: 60%
   @media (max-width: 620px)
     margin-top: 5%
     max-width: 100%
+    margin-bottom: 10%
 
 .registration-block__heading
   color: #f8f8f8
   font-size: 69px
   font-weight: bold
-  @media (max-width: 900px)
+  @media (max-width: 1200px)
     font-size: 60px
+  @media (max-width: 1100px)
+    font-size: 55px
+  @media (max-width: 900px)
+    font-size: 40px
   @media (max-width: 620px)
     font-size: 34px
 
@@ -427,24 +460,47 @@ details summary::-webkit-details-marker
   color: #f8f8f8
   font-size: 24px
   font-weight: bold
+  @media (max-width: 1200px)
+    font-size: 20px
+  @media (max-width: 820px)
+    font-size: 18px
 
 .registration-block__line
   margin-top: 16px
   margin-bottom: 17px
   background: url("../img/reg-line.png")
-  max-width: 100%
+  max-width: 96%
   height: 4px
+  @media (max-width: 820px)
+    margin-top: 2%
+    margin-bottom: 2%
+  @media (max-width: 620px)
+    margin-top: 5%
+    margin-bottom: 5%
 
 .registration-block__text
   color: #f8f8f8
   font-size: 18px
   font-weight: bold
+  @media (max-width: 1200px)
+    font-size: 17px
   @media (max-width: 900px)
     font-size: 16px
 
 .registration
   display: flex
   margin-top: 33px
+
+.registration-form
+  width: 30%
+  @media (max-width: 1200px)
+    width: 35%
+  @media (max-width: 1050px)
+    width: 40%
+  @media (max-width: 950px)
+    width: 50%
+  @media (max-width: 400px)
+    width: 60%
 
 .registration-form__input
   width: 112%
@@ -457,6 +513,8 @@ details summary::-webkit-details-marker
   outline: none
   padding-left: 23px
   padding-right: 23px
+  @media (max-width: 820px)
+    height: 30px
 
 .registration-form__input::placeholder
   color: #ffffff
@@ -475,6 +533,19 @@ details summary::-webkit-details-marker
   line-height: 36px
   transition: all 0.5s
   margin-left: 6%
+  @media (max-width: 1050px)
+    width: 40%
+    font-size: 16px
+    margin-left: 10%
+  @media (max-width: 950px)
+    width: 50%
+  @media (max-width: 820px)
+    height: 30px
+    line-height: 30px
+  @media (max-width: 400px)
+    width: 67%
+    margin-left: 0
+    margin-top: 5%
 
 .registration-block__button:hover
   background-color: #116e77
@@ -482,11 +553,11 @@ details summary::-webkit-details-marker
 
 .registration-line
   border: 1px solid #344051
-  margin-top: 80px
-  margin-bottom: 88px
+  margin-top: 3%
+  margin-bottom: 3%
   @media (max-width: 620px)
-    margin-top: 10%
-    margin-bottom: 10%
+    margin-top: 0
+    margin-bottom: 7%
 
 .registration-flex
   display: flex
@@ -507,16 +578,25 @@ details summary::-webkit-details-marker
   font-size: 18px
   font-weight: bold
 
-.kron-registration-dark
-  min-height: 813px
-
 .kron-registration__block--dark
   display: flex
-  padding-top: 107px
+  padding-top: 10%
+  @media (max-width: 620px)
+    flex-direction: column
 
 .registration-block__phone--dark
   display: flex
-  margin-left: 97px
+  margin-left: 10%
+  @media (max-width: 1150px)
+    margin-right: 3%
+  @media (max-width: 900px)
+    align-items: center
+    order: -1
+
+.phone-img-dark
+  width: 50%
+  @media (max-width: 900px)
+    height: 80%
 
 .registration-block__info--dark
   max-width: 50%
@@ -527,8 +607,10 @@ details summary::-webkit-details-marker
   color: #344051
   font-size: 69px
   font-weight: bold
-  @media (max-width: 880px)
+  @media (max-width: 1200px)
     font-size: 60px
+  @media (max-width: 900px)
+    font-size: 55px
   @media (max-width: 620px)
     font-size: 34px
 
@@ -536,8 +618,10 @@ details summary::-webkit-details-marker
   color: #344051
   font-size: 24px
   font-weight: bold
-  @media (max-width: 880px)
-    font-size: 22px
+  @media (max-width: 1200px)
+    font-size: 20px
+  @media (max-width: 820px)
+    font-size: 18px
 
 .registration-block__line--dark
   margin-top: 16px
@@ -550,12 +634,29 @@ details summary::-webkit-details-marker
   color: #344051
   font-size: 18px
   font-weight: bold
-  @media (max-width: 880px)
+  @media (max-width: 1200px)
+    font-size: 17px
+  @media (max-width: 900px)
     font-size: 16px
 
 .registration-dark
   display: flex
-  margin-top: 33px
+  margin-top: 5%
+  @media (max-width: 1000px)
+    margin-top: 3%
+  @media (max-width: 400px)
+    flex-direction: column
+
+.registration-form-dark
+  width: 30%
+  @media (max-width: 1200px)
+    width: 35%
+  @media (max-width: 1050px)
+    width: 40%
+  @media (max-width: 950px)
+    width: 50%
+  @media (max-width: 400px)
+    width: 60%
 
 .registration-form__input--dark
   width: 111%
@@ -568,6 +669,8 @@ details summary::-webkit-details-marker
   outline: none
   padding-left: 23px
   padding-right: 23px
+  @media (max-width: 820px)
+    height: 30px
 
 .registration-form__input--dark::placeholder
   color: #344051
@@ -586,13 +689,26 @@ details summary::-webkit-details-marker
   line-height: 36px
   transition: all 0.5s
   margin-left: 6%
+  @media (max-width: 1050px)
+    width: 40%
+    font-size: 16px
+    margin-left: 10%
+  @media (max-width: 950px)
+    width: 50%
+  @media (max-width: 820px)
+    height: 30px
+    line-height: 30px
+  @media (max-width: 400px)
+    width: 67%
+    margin-left: 0
+    margin-top: 5%
 
 .registration-block__button--dark:hover
   background-color: #344051
 
 .registration-line-dark
   border: 1px solid #344051
-  margin-top: 57px
+  margin-top: 123px
   margin-bottom: 78px
   width: 100%
   @media (max-width: 620px)
@@ -602,6 +718,7 @@ details summary::-webkit-details-marker
 .registration-flex-dark
   display: flex
   justify-content: space-between
+  padding-bottom: 5%
   @media (max-width: 620px)
     flex-direction: column
     min-height: 300px
@@ -624,7 +741,7 @@ details summary::-webkit-details-marker
   @media (max-width: 760px)
     font-size: 14px
   @media (max-width: 620px)
-    font-size: 20px
+    font-size: 19px
 
 .feature-block__text--dark
   color: #344051
@@ -639,26 +756,38 @@ details summary::-webkit-details-marker
     font-size: 12px
 
 .widget
-  min-height: 720px
   background: url("../img/reg-back.png")
 
 .widget-block
   display: flex
-  padding-top: 110px
+  padding-top: 10%
+  justify-content: space-between
+  @media (max-width: 620px)
+    flex-direction: column
+    align-items: center
 
 .widget-block__flex
-  margin-right: 96px
   padding-top: 15px
+  width: 35%
+  @media (max-width: 620px)
+    display: flex
+    width: 100%
+    justify-content: space-between
 
 .widget-block__link
   display: flex
-  width: 114%
+  align-items: center
+  justify-content: space-around
   height: 110px
   box-shadow: 2px 4px 0 rgba(6, 7, 7, 0.26)
   border-radius: 10px
   background-color: #000000
   text-decoration: none
   color: #ffffff
+  @media (max-width: 750px)
+    height: 45px
+  @media (max-width: 620px)
+    width: 47%
 
 .widget-block__link--white
   background-color: #ffffff
@@ -670,22 +799,35 @@ details summary::-webkit-details-marker
 .widget-img
   width: 60px
   height: 73px
-  margin-top: 17px
-  margin-left: 33px
+  @media (max-width: 900px)
+    width: 20%
+    height: auto
+  @media (max-width: 750px)
+    width: 15%
 
 .widget-block-flex
   display: flex
   flex-direction: column
-  margin-top: 13px
-  margin-left: 20px
 
 .widget-block-text
   font-size: 33px
   font-weight: bold
+  @media (max-width: 1000px)
+    font-size: 28px
+  @media (max-width: 900px)
+    font-size: 20px
+  @media (max-width: 620px)
+    font-size: 17px
 
 .widget-block-text--big
   font-size: 43px
   font-weight: bold
+  @media (max-width: 1000px)
+    font-size: 38px
+  @media (max-width: 900px)
+    font-size: 34px
+  @media (max-width: 750px)
+    font-size: 17px
 
 .widget-block__heading
   color: #f8f8f8
@@ -695,10 +837,12 @@ details summary::-webkit-details-marker
   @media (max-width: 900px)
     font-size: 60px
   @media (max-width: 750px)
-    font-size: 55px
+    font-size: 50px
   @media (max-width: 620px)
     padding-top: 10%
     font-size: 34px
+  @media (max-width: 750px)
+    font-size: 30px
 
 .widget-block__heading--small
   color: #f8f8f8
@@ -723,15 +867,16 @@ details summary::-webkit-details-marker
 
 .widget-line
   border: 1px solid #344051
-  margin-top: 82px
-  margin-bottom: 85px
+  margin-top: 5%
+  margin-bottom: 5%
   @media (max-width: 620px)
-    margin-top: 10%
-    margin-bottom: 10%
+    margin-top: 5%
+    margin-bottom: 5%
 
 .registration-flex
   display: flex
   justify-content: space-between
+  padding-bottom: 5%
   @media (max-width: 620px)
     flex-direction: column
     min-height: 250px
@@ -740,7 +885,7 @@ details summary::-webkit-details-marker
   display: flex
   margin-bottom: 25px
   @media (max-width: 620px)
-    margin-bottom: 15px
+    margin-bottom: 3%
 
 .feature-block__heading
   color: #f8f8f8
@@ -751,17 +896,26 @@ details summary::-webkit-details-marker
     font-size: 18px
   @media (max-width: 900px)
     font-size: 14px
+  @media (max-width: 620px)
+    font-size: 16px
 
 .feature-block__text
   color: #f8f8f8
   font-size: 18px
   font-weight: bold
+  text-align: start
   @media (max-width: 1210px)
     font-size: 16px
   @media (max-width: 1120px)
     font-size: 14px
   @media (max-width: 900px)
     font-size: 10px
+  @media (max-width: 620px)
+    font-size: 12px
+
+.feature-block
+  @media (max-width: 620px)
+    margin-bottom: 3%
 
 
 .map
@@ -771,20 +925,30 @@ details summary::-webkit-details-marker
   display: flex
   padding-top: 61px
   justify-content: space-between
+  @media (max-width: 850px)
+    flex-direction: column
+    align-items: center
 
 .map-img
   display: flex
   width: 32%
+  @media (max-width: 1100px)
+    width: 40%
+  @media (max-width: 850px)
+    margin-bottom: 5%
+    width: 65%
+  @media (max-width: 620px)
+    width: 100%
 
 .map-block__heading
   color: #344051
   font-size: 69px
   font-weight: bold
-  @media (max-width: 1130px)
+  @media (max-width: 1250px)
     font-size: 55px
-  @media (max-width: 900px)
+  @media (max-width: 1010px)
     font-size: 45px
-  @media (max-width: 750px)
+  @media (max-width: 830px)
     font-size: 38px
   @media (max-width: 620px)
     font-size: 34px
@@ -805,6 +969,8 @@ details summary::-webkit-details-marker
   display: flex
   margin-top: 24px
   justify-content: space-between
+  @media (max-width: 850px)
+    flex-direction: column
 
 .map-form__input
   width: 100%
@@ -832,9 +998,16 @@ details summary::-webkit-details-marker
   font-weight: bold
   line-height: 36px
   transition: all 0.5s
+  @media (max-width: 850px)
+    width: 66%
+    margin-top: 2%
+  @media (max-width: 620px)
+    width: 100%
 
 .map-gen-form
   width: 66%
+  @media (max-width: 620px)
+    width: 100%
 
 .map-button:hover
   background-color: #344051
@@ -916,14 +1089,20 @@ details summary::-webkit-details-marker
   justify-content: space-evenly
   align-items: center
   text-decoration: none
-  width: 32%
+  width: 30%
   height: auto
   box-shadow: 1px 2px 0 rgba(6, 7, 7, 0.23)
   background-color: #344051
   color: #f8f8f8
   border-radius: 5px
   @media (max-width: 1040px)
-    width: 43%
+    width: 35%
+    height: 46px
+  @media (max-width: 850px)
+    width: 40%
+    height: 46px
+  @media (max-width: 850px)
+    width: 48%
     height: 46px
   @media (max-width: 620px)
     height: 42px
@@ -942,10 +1121,16 @@ details summary::-webkit-details-marker
     margin-right: 0
 
 .footer-app__link:last-child
-  width: 32%
+  width: 30%
   height: 47px
   @media (max-width: 1040px)
-    width: 43%
+    width: 35%
+  @media (max-width: 850px)
+    width: 40%
+    height: 46px
+  @media (max-width: 850px)
+    width: 48%
+    height: 46px
   @media (max-width: 620px)
     width: 32%
     height: 42px
@@ -1247,7 +1432,7 @@ details summary::-webkit-details-marker
   z-index: 5
 
 .partner-button
-  width: 20%
+  width: 60%
   height: 36px
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09)
   border-radius: 10px
@@ -1260,22 +1445,29 @@ details summary::-webkit-details-marker
   text-align: center
   line-height: 36px
   transition: all 0.5s
+  @media (max-width: 900px)
+    width: 80%
+  @media (max-width: 620px)
+    width: 55%
+    font-size: 16px
 
 .partner-button:hover
   background-color: #344051
 
 .partner-info__block
-  width: 440px
-  height: 315px
-  margin-right: 32px
+  margin-right: 3%
+
+.partner-info-img
+  width: 100%
 
 .partner
-  min-height: 818px
   background: url("../img/reg-back.png")
 
 .partner-block
   display: flex
-  padding-top: 111px
+  padding-top: 14%
+  @media (max-width: 620px)
+    flex-direction: column
 
 .partner-block__button
   width: 34%
@@ -1291,7 +1483,14 @@ details summary::-webkit-details-marker
   display: block
   line-height: 36px
   transition: all 0.5s
-  margin-top: 77px
+  margin-top: 5%
+  @media (max-width: 900px)
+    width: 50%
+    height: 30px
+    line-height: 30px
+  @media (max-width: 620px)
+    width: 55%
+    font-size: 16px
 
 .partner-block__button:hover
   color: #ffffff
@@ -1303,12 +1502,13 @@ details summary::-webkit-details-marker
 
 .widget-partner
   background-color: #ffffff
-  min-height: 829px
 
 .widget-partner-block
   display: flex
-  padding-top: 107px
+  padding-top: 10%
   color: #344051
+  @media (max-width: 620px)
+    flex-direction: column-reverse
 
 .partner-page-text
   color: #344051
@@ -1328,6 +1528,13 @@ details summary::-webkit-details-marker
   line-height: 36px
   transition: all 0.5s
   margin-top: 31px
+  @media (max-width: 1100px)
+    width: 50%
+  @media (max-width: 750px)
+    width: 60%
+  @media (max-width: 620px)
+    width: 70%
+    font-size: 16px
 
 .widget-partner__button:hover
   background-color: #344051
@@ -1355,15 +1562,24 @@ details summary::-webkit-details-marker
   font-size: 69px
   padding-top: 157px
   font-weight: bold
+  @media (max-width: 1160px)
+    font-size: 60px
+  @media (max-width: 620px)
+    padding-top: 5%
+    font-size: 34px
 
 .kron-faq__heading--small
   color: #344051
   font-size: 24px
   margin-bottom: 18px
   font-weight: bold
+  @media (max-width: 800px)
+    font-size: 22px
+  @media (max-width: 620px)
+    font-size: 20px
 
 .kron-faq__line
-  max-width: 31%
+  max-width: 100%
   height: 4px
   background: url("../img/hero-line.png")
   margin-bottom: 28px
@@ -1373,6 +1589,9 @@ details summary::-webkit-details-marker
   font-size: 18px
   font-weight: bold
   margin-bottom: 22px
+  @media (max-width: 620px)
+    font-size: 16px
+    margin-bottom: 20px
 
 .kron-faq__background--people
   width: 734px
@@ -1390,9 +1609,15 @@ details summary::-webkit-details-marker
 .faq-block
   display: flex
   padding-top: 145px
+  @media (max-width: 620px)
+    flex-direction: column
+    padding-top: 15%
 
 .faq-info__block
-  margin-right: 35px
+  margin-right: 3%
+
+.faq-info-img
+  width: 100%
 
 .faq-block__button
   margin-top: 41px
@@ -1402,7 +1627,9 @@ details summary::-webkit-details-marker
   flex-wrap: wrap
   justify-content: space-between
   margin-top: 49px
-  margin-bottom: 131px
+  margin-bottom: 5%
+  @media (max-width: 620px)
+    justify-content: center
 
 .flex-icons__link
   display: block
@@ -1413,15 +1640,21 @@ details summary::-webkit-details-marker
   font-size: 69px
   font-weight: bold
   margin-bottom: 31px
+  @media (max-width: 620px)
+    font-size: 55px
+    text-align: center
+    margin-bottom: 6%
 
 .faq-reg__line
   background-image: url("../img/faq-line.png")
   margin-bottom: 31px
   max-width: 100%
   height: 4px
+  @media (max-width: 620px)
+    margin-bottom: 8%
 
 .faq-reg
-  margin-bottom: 112px
+  margin-bottom: 5%
 
 .reg-questions__heading::-webkit-details-marker
   display: none
@@ -1440,6 +1673,18 @@ details summary::-webkit-details-marker
   cursor: pointer
   position: relative
   border: 3px solid transparent
+  @media (max-width: 950px)
+    font-size: 20px
+    height: 50px
+    line-height: 15px
+  @media (max-width: 800px)
+    font-size: 15px
+    height: 40px
+    line-height: 5px
+  @media (max-width: 620px)
+    font-size: 16px
+    height: 50px
+    line-height: 13px
 
 .reg-questions__text
   color: #344051
@@ -1448,15 +1693,25 @@ details summary::-webkit-details-marker
   margin-left: 32px
   margin-top: 27px
 
-.reg-questions__form
-  margin-top: 38px
-  margin-left: 32px
+.reg-flex
   display: flex
+  align-items: center
+  margin-top: 3%
+  @media (max-width: 620px)
+    flex-direction: column
+
+.reg-questions__form
+  margin-left: 32px
+  @media (max-width: 620px)
+    margin-left: 0
+    margin-bottom: 3%
 
 .reg-questions__img
   position: absolute
   left: 94%
   top: 40%
+  @media (max-width: 800px)
+    display: none
 
 .reg-questions__input
   width: 233px
@@ -1488,6 +1743,8 @@ details summary::-webkit-details-marker
   text-decoration: none
   line-height: 36px
   transition: all 0.5s
+  @media (max-width: 620px)
+    margin-left: 0
 
 .reg-questions__button:hover
   background-color: #344051
@@ -1503,6 +1760,8 @@ details summary::-webkit-details-marker
   content: url("../img/arrow-up.png")
   left: 94%
   position: absolute
+  @media (max-width: 800px)
+    content: none
 
 .faq-reg__questions:not(:last-child)
   margin-bottom: 27px
@@ -1512,23 +1771,44 @@ details summary::-webkit-details-marker
   min-height: 418px
   display: flex
   justify-content: space-between
-  margin-bottom: 93px
+  margin-bottom: 5%
+  @media (max-width: 620px)
+    flex-direction: column
+    align-items: center
 
 .faq-form__img
-  width: 422px
+  width: 40%
   height: 305px
   margin-top: 33px
+  margin-right: 3%
+  @media (max-width: 620px)
+    width: 80%
+    margin-bottom: 3%
+    display: block
+    height: auto
 
 .faq-form__heading
   color: #344051
   font-size: 69px
   font-weight: bold
+  @media (max-width: 1150px)
+    font-size: 60px
+  @media (max-width: 980px)
+    font-size: 55px
+  @media (max-width: 900px)
+    font-size: 45px
+  @media (max-width: 750px)
+    font-size: 40px
 
 .faq-form__text
   color: #344051
   font-size: 24px
   font-weight: bold
   margin-bottom: 20px
+  @media (max-width: 1150px)
+    font-size: 18px
+  @media (max-width: 980px)
+    font-size: 16px
 
 .faq-form__line
   max-width: 100%
@@ -1545,6 +1825,9 @@ details summary::-webkit-details-marker
   border: 2px solid #576476
   margin-bottom: 10px
   outline: none
+  @media (max-width: 620px)
+    width: 50%
+    padding-left: 1%
 
 .faq-form__input:first-child
   margin-right: 5.4%
@@ -1553,6 +1836,8 @@ details summary::-webkit-details-marker
   color: #344051
   font-size: 18px
   font-weight: 400
+  @media (max-width: 350px)
+    font-size: 15px
 
 .faq-form__input--line
   width: 100%
@@ -1563,16 +1848,22 @@ details summary::-webkit-details-marker
   border: 2px solid #576476
   margin-bottom: 9px
   outline: none
+  @media (max-width: 620px)
+    padding-left: 1%
 
 .faq-form__input--line::placeholder
   color: #344051
   font-size: 18px
   font-weight: 400
+  @media (max-width: 350px)
+    font-size: 15px
 
 .faq-form-about::placeholder
   color: #344051
   font-size: 18px
   font-weight: 400
+  @media (max-width: 350px)
+    font-size: 15px
 
 .faq-form-about
   padding: 2% 1.5% 2% 1.5%
@@ -1580,6 +1871,8 @@ details summary::-webkit-details-marker
   border: 2px solid #576476
   outline: none
   width: 100%
+  @media (max-width: 620px)
+    padding-left: 1%
 
 .faq-form__button
   text-decoration: none
@@ -1596,6 +1889,10 @@ details summary::-webkit-details-marker
   line-height: 36px
   margin-top: 20px
   transition: all 0.5s
+  @media (max-width: 900px)
+    width: 40%
+  @media (max-width: 620px)
+    width: 60%
 
 .faq-form__button:hover
   background-color: #344051
@@ -1606,16 +1903,19 @@ details summary::-webkit-details-marker
   align-items: center
 
 .kron-ship__img
-  width: 530px
-  height: 283px
+  width: 44%
   margin-top: 10%
   margin-bottom: 5%
+  @media (max-width: 620px)
+    width: 80%
 
 .kron-ship__heading
   color: #333f50
   font-size: 36px
   font-weight: bold
   margin-bottom: 11px
+  @media (max-width: 620px)
+    font-size: 30px
 
 .kron-ship__text
   color: #333f50
@@ -1623,12 +1923,14 @@ details summary::-webkit-details-marker
   font-weight: bold
   margin-bottom: 30px
   text-align: center
+  @media (max-width: 620px)
+    font-size: 16px
 
 .kron-ship__button
   display: block
   text-align: center
   text-decoration: none
-  width: 20%
+  width: 25%
   height: 36px
   box-shadow: 2px 3px 4px rgba(6, 7, 7, 0.09)
   border-radius: 10px
@@ -1637,17 +1939,25 @@ details summary::-webkit-details-marker
   font-size: 18px
   font-weight: bold
   line-height: 36px
-  margin-bottom: 196px
+  margin-bottom: 10%
   transition: all 0.5s
+  @media (max-width: 900px)
+    font-size: 16px
+    width: 30%
+  @media (max-width: 620px)
+    font-size: 16px
+    width: 60%
 
 .kron-ship__button:hover
   background-color: #344051
 
 .kron-ship__img--food
-  width: 28.3%
+  width: 35%
   height: auto
   margin-top: 10%
   margin-bottom: 5%
+  @media (max-width: 620px)
+    width: 70%
 
 .kron-main__text--red
   color: #79221d
@@ -1663,12 +1973,7 @@ details summary::-webkit-details-marker
     margin-bottom: 20px
 
 .kron-main-registration
-  min-height: 818px
   background: url("../img/reg-back.png")
-  @media (max-width: 800px)
-    min-height: 700px
-  @media (max-width: 620px)
-    min-height: 1050px
 
 .kron-main-registration__block
   display: flex
@@ -1702,7 +2007,7 @@ details summary::-webkit-details-marker
   @media (max-width: 760px)
     font-size: 14px
   @media (max-width: 620px)
-    width: 70%
+    width: 55%
 
 .registration-main-block__button:hover
   background-color: #116e77
@@ -1710,7 +2015,11 @@ details summary::-webkit-details-marker
 
 .registration-main
   display: flex
-  margin-top: 77px
+  margin-top: 5%
+  @media (max-width: 1000px)
+    margin-top: 3%
+  @media (max-width: 400px)
+    flex-direction: column
 
 .registration-block
   width: 34%
@@ -1855,7 +2164,7 @@ details summary::-webkit-details-marker
     font-size: 14px
     width: 40%
   @media (max-width: 620px)
-    width: 70%
+    width: 60%
 
 .registration-ship__btn:hover
   color: #ffffff
@@ -1868,10 +2177,7 @@ details summary::-webkit-details-marker
   margin-top: 20px
 
 .kron-food
-  min-height: 818px
   background: url("../img/reg-back.png")
-  @media (max-width: 620px)
-    min-height: 1080px
 
 .kron-food-block
   padding-top: 7%
@@ -1895,6 +2201,7 @@ details summary::-webkit-details-marker
   display: flex
   flex-direction: column
   align-items: flex-start
+  margin-right: 15%
   @media (max-width: 620px)
     max-width: 100%
 
@@ -1916,6 +2223,9 @@ details summary::-webkit-details-marker
   @media (max-width: 620px)
     width: 70%
     margin-top: 10%
+    height: 30px
+    font-size: 16px
+    line-height: 30px
 
 .kron-food-button:hover
   color: #ffffff
@@ -2011,6 +2321,9 @@ details summary::-webkit-details-marker
 
 .map-block__info--dark
   max-width: 55%
+  @media (max-width: 850px)
+    max-width: 60%
+    margin-bottom: 5%
   @media (max-width: 620px)
     max-width: 100%
     display: flex
@@ -2022,6 +2335,10 @@ details summary::-webkit-details-marker
 
 .partners-img
   width: 100%
+
+.feature-block-img
+  @media (max-width: 620px)
+    width: 6%
 
 
 
